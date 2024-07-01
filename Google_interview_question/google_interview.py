@@ -5,6 +5,8 @@ def bad_nested_solution(arr, target_value):
 				return "Yes"
 	return "NO"
 
+# O(n^2)
+
 print(bad_nested_solution(arr1, tar))
 
 def has_pair_with_sum(arr, target_value):
@@ -20,6 +22,7 @@ def has_pair_with_sum(arr, target_value):
 arr1 = [1, 2, 3, 9]
 arr2 = [1, 2, 4, 4]
 
+#(O(x+y))
 print(bad_nested_solution(arr1, 8))
 print(bad_nested_solution(arr2, 8))
 
