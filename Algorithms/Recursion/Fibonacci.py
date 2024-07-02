@@ -1,17 +1,14 @@
-def fibonacci_recursive(n):
-    f0 = 0
-    f1 = 1
-    if n == 1:
-        return 1
-    elif n ==2:
-        return 1
+def fibonacci_recursive(n): #O(2^n) use a lot of time
+    
+    if n < 2:
+        return n
     else:
         return fibonacci_recursive(n-1) +fibonacci_recursive(n-2)
 
 # print(fibonacci_recursive(6))
 
 
-def fibonacci_iterative(n):
+def fibonacci_iterative(n): #O(n)
     result = 0
     i =3
     temp1 = 1
