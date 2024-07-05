@@ -13,7 +13,7 @@ def SelectionSort(array):
         
     
     return array
-
+#O(n^2)
         
         
 

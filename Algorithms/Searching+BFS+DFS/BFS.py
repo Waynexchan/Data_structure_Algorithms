@@ -36,15 +36,15 @@ class BinarySearchTree:
         currentNode = self.root
         result = []
         queue = []
-        queue.append(currentNode)
+        queue.append(currentNode) # append current node into the queue
 
         while(len(queue) > 0):
             currentNode = queue.pop(0)
-            result.append(currentNode.value)
+            result.append(currentNode.value) # append current node value
 
-            if currentNode.left is not None:
+            if currentNode.left is not None: #inset left handside into queue
                 queue.append(currentNode.left)
-            if currentNode.right is not None:
+            if currentNode.right is not None: #inset  right handside into queue
                 queue.append(currentNode.right)
 
         return result
