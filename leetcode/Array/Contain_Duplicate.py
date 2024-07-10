@@ -39,3 +39,24 @@ nums = [1,2,3,1]
 solution = Solution()
 result = solution.containsDuplicate(nums)
 print(result)
+
+
+class Solution(object):
+    def containsDuplicate(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
+       
+        seen_freq = {}
+        for i in nums:
+            if i in seen_freq:
+                return True
+            else:
+                seen_freq[i] = 1
+        return False
+
+nums = [1,2,3,1]
+solution = Solution()
+result = solution.containsDuplicate(nums)
+print(result)
